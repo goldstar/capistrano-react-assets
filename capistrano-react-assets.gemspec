@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |gem|
   gem.name          = "capistrano-react-assets"
-  gem.version       = "0.0.0"
+  gem.version       = "0.0.2"
   gem.authors       = ["Patrick O'Brien"]
   gem.email         = ["pobrien@goldstar.com"]
   gem.description   = "Package and push react assets locally"
