@@ -31,8 +31,11 @@ namespace :react_assets do
 
   task :prepare_environment do
     run_locally do
-      execute "npm config set proxy 'http://proxy:3128'"
+      execute "npm cache clean"
       execute "npm config set registry https://registry.npmjs.org/"
+      execute "npm config set proxy 'http://proxy:3128'"
+      execute "npm config set http-proxy 'http://proxy:3128'"
+      execute "npm config set https-proxy 'http://proxy:3128'"
     end
   end
 
